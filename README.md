@@ -154,3 +154,4 @@ to beta-lda-k<K>.tsv, and *.doc.states corresponds to theta-lda-k<K>.tsv.
 This fork enables proper debugging to better understand the working of this software.\
 To enable debugging it doesn't suffice to simply specify `./configure --enable-debug make`. It requires changes to `Makefile.am` and `Makefile.in` and this fork has implemented those required changes.
 `.vscode\` has example `launch.json` and `tasks.json` that were actually used to run this software in debug mode in Windows 10 WSL Visual Studio Code.
+***Note*** `make_sudo` in `tasks.json` is just a shell script that runs `sudo make`. It is needed because VSCode cannot run commands like `sudo make`.

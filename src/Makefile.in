@@ -484,10 +484,8 @@ uninstall-am: uninstall-binPROGRAMS
 	mostlyclean-generic pdf pdf-am ps ps-am tags uninstall \
 	uninstall-am uninstall-binPROGRAMS
 
-#if DEBUG
-#AM_CFLAGS = -g  -O0
-#AM_CXXFLAGS = -g -O0
-#endif
+AM_CFLAGS = -g  -O0
+AM_CXXFLAGS = -g -O0
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

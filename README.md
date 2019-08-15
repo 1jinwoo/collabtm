@@ -148,3 +148,9 @@ in CTPF (see collabtm.cc:initialize()).
 The output directory ("fit_50/" in the above example) will contain the fit files which 
 can be used to initialize CTPF with -lda-init option. Specifically *.topics corresponds 
 to beta-lda-k<K>.tsv, and *.doc.states corresponds to theta-lda-k<K>.tsv.
+
+---
+### To run in debug mode
+This fork enables proper debugging to better understand the working of this software.\
+To enable debugging it doesn't suffice to simply specify `./configure --enable-debug make`. It requires changes to `Makefile.am` and `Makefile.in` and this fork has implemented those required changes.
+`.vscode\` has example `launch.json` and `tasks.json` that were actually used to run this software in debug mode in Windows 10 WSL Visual Studio Code.

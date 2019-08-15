@@ -1,0 +1,36 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=8303                       87
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/home/jinwoowon/collabtm/src/collabtm",
+            "args": [
+                "-dir", "/home/jinwoowon/Documents/debug_coll_f_f",
+                "-nusers", "100",
+                "-ndocs", "12650",
+                "-nvocab", "1000",
+                "-k", "100",
+                "-lda-init",
+                "-fixeda"
+            ],
+            "stopAtEntry": true,
+            "cwd": "/home/jinwoowon/",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}
